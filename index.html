@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jagadees M — Cloud, DevOps and DevSecOps portfolio.">
+  <title>Jagadees M | Cloud & DevOps</title>
+  <style>
+    :root{--bg:#0b1020;--panel:#121a2e;--text:#edf3ff;--muted:#a7b4cc;--accent:#65e0c2;--line:#26324b}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 80% 0%,#172a43 0,transparent 34%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{width:min(1080px,92%);margin:auto}
+    header{padding:22px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,16,32,.92);backdrop-filter:blur(12px);z-index:2}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .brand{font-weight:800;letter-spacing:.3px;color:var(--text)} .brand span{color:var(--accent)}
+    nav .links{display:flex;gap:20px;flex-wrap:wrap;font-size:.94rem}
+    .hero{padding:90px 0 70px;display:grid;grid-template-columns:1.5fr .8fr;gap:42px;align-items:center}
+    .eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:800}
+    h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.08;letter-spacing:-2px;margin:12px 0 20px}
+    h1 em{font-style:normal;color:var(--accent)} .lead{font-size:1.12rem;color:var(--muted);max-width:680px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:11px 17px;border-radius:10px;border:1px solid var(--line);font-weight:700}
+    .btn.primary{background:var(--accent);color:#07131a;border-color:var(--accent)}
+    .terminal{background:#080d18;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 20px 60px #0004;font: .91rem/1.9 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}
+    .dots{display:flex;gap:6px;margin-bottom:16px}.dots i{width:9px;height:9px;border-radius:50%;background:#53627d}
+    .green{color:var(--accent)}.muted{color:var(--muted)}
+    section{padding:42px 0 56px} h2{font-size:1.9rem;letter-spacing:-.5px;margin:0 0 8px}
+    .sub{color:var(--muted);margin:0 0 25px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:linear-gradient(145deg,#151f35,#101729);border:1px solid var(--line);border-radius:16px;padding:22px}
+    .card h3{margin:0 0 8px}.card p{color:var(--muted);margin:0 0 14px}
+    .taglist{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .tag{border:1px solid #31415e;background:#18243b;color:#dbe7fa;border-radius:999px;padding:4px 10px;font-size:.8rem}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}.skills .tag{padding:8px 13px;font-size:.9rem}
+    .contact{background:linear-gradient(130deg,#142640,#101729);border:1px solid var(--line);border-radius:20px;padding:28px;display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+    footer{padding:26px 0 36px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:58px}.grid{grid-template-columns:1fr}.terminal{max-width:100%}nav .links{gap:12px}}
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="#home">Nexa<span>Cloud</span> / Jagadees</a>
+    <div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+  </nav>
+</header>
+<main class="wrap">
+  <section class="hero" id="home">
+    <div>
+      <div class="eyebrow">Cloud · DevOps · DevSecOps</div>
+      <h1>Hi, I'm Jagadees.<br>I build <em>reliable cloud workflows.</em></h1>
+      <p class="lead">I'm an IT professional focused on cloud infrastructure, CI/CD automation, and secure software delivery. This portfolio is a home for my technical projects, hands-on learning, and engineering notes.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore projects ↓</a>
+        <a class="btn" href="#contact">Contact me</a>
+        <!-- Replace # with your public resume URL before publishing -->
+        <a class="btn" href="#" onclick="alert('Add your resume PDF link to this button before publishing.');return false;">Resume (add link)</a>
+      </div>
+    </div>
+    <div class="terminal" aria-label="Terminal-style skills summary">
+      <div class="dots"><i></i><i></i><i></i></div>
+      <div><span class="green">$</span> focus --areas</div>
+      <div class="muted">Cloud infrastructure</div>
+      <div class="muted">CI/CD & deployment automation</div>
+      <div class="muted">Infrastructure as Code</div>
+      <div class="muted">Security-minded operations</div>
+      <br><div><span class="green">status:</span> always learning</div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p class="sub">A practical, automation-first approach to modern infrastructure.</p>
+    <div class="card">
+      <p style="margin:0;color:var(--muted)">I’m interested in making software delivery more repeatable, observable, and secure. I use this site to document real work and demonstrate my approach to cloud and DevOps engineering. Add a few sentences here about your actual responsibilities, experience, and the kind of role you’re targeting.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Technology areas</h2>
+    <p class="sub">Edit this list so it reflects tools you have genuinely used.</p>
+    <div class="skills">
+      <span class="tag">Microsoft Azure</span><span class="tag">Azure DevOps</span><span class="tag">GitHub Actions</span>
+      <span class="tag">Jenkins</span><span class="tag">Terraform</span><span class="tag">Bicep</span>
+      <span class="tag">CI/CD</span><span class="tag">Docker</span><span class="tag">Kubernetes</span>
+      <span class="tag">Linux</span><span class="tag">Python</span><span class="tag">DevSecOps</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Selected projects</h2>
+    <p class="sub">Replace these starter cards with real projects, repositories, screenshots, and outcomes before using this as evidence of completed work.</p>
+    <div class="grid">
+      <article class="card">
+        <h3>01 / CI/CD Automation</h3>
+        <p>Document a pipeline you built or practiced: triggers, build and test stages, approvals, deployment strategy, and rollback approach.</p>
+        <div class="taglist"><span class="tag">GitHub Actions</span><span class="tag">Azure DevOps</span><span class="tag">CI/CD</span></div>
+        <p style="margin-top:16px"><a href="https://github.com/" target="_blank" rel="noopener">Add project repository ↗</a></p>
+      </article>
+      <article class="card">
+        <h3>02 / Infrastructure as Code</h3>
+        <p>Show an actual Terraform or Bicep example, the resources it provisions, how secrets are handled, and how changes are reviewed.</p>
+        <div class="taglist"><span class="tag">Terraform</span><span class="tag">Bicep</span><span class="tag">Azure</span></div>
+        <p style="margin-top:16px"><a href="https://github.com/" target="_blank" rel="noopener">Add project repository ↗</a></p>
+      </article>
+      <article class="card">
+        <h3>03 / DevSecOps Checks</h3>
+        <p>Describe a real security workflow such as dependency scanning, secret detection, container scanning, or policy checks in CI.</p>
+        <div class="taglist"><span class="tag">Security</span><span class="tag">Automation</span><span class="tag">DevSecOps</span></div>
+        <p style="margin-top:16px"><a href="https://github.com/" target="_blank" rel="noopener">Add project repository ↗</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <div><h2>Let's connect</h2><p class="sub" style="margin:5px 0 0">Open to discussing Cloud, DevOps, and DevSecOps opportunities.</p></div>
+      <div class="actions" style="margin:0">
+        <!-- Replace the placeholders with your real profiles and an email you can access -->
+        <a class="btn primary" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="mailto:REPLACE-WITH-YOUR-REAL-EMAIL">Email</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Jagadees M · Personal developer portfolio · Built for learning and professional showcasing.</div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
